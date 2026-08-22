@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECLPISE DUMP License API & Admin Portal</title>
+    <meta name="description" content="License Key Authentication API & Management Portal for ECLPISE DUMP." />
+    <meta property="og:title" content="ECLPISE DUMP License API" />
+    <meta property="og:description" content="License Key Authentication API & Management Portal for ECLPISE DUMP." />
+    <meta property="og:type" content="website" />
+    <script>
+      (function () {
+        try {
+          if (typeof window !== 'undefined' && typeof window.fetch === 'function') {
+            var _nativeFetch = window.fetch.bind(window);
+            var _currentFetch = _nativeFetch;
+            try {
+              Object.defineProperty(window, 'fetch', {
+                get: function () {
+                  return _currentFetch;
+                },
+                set: function (newFetch) {
+                  _currentFetch = typeof newFetch === 'function' ? newFetch : _nativeFetch;
+                },
+                configurable: true,
+                enumerable: true,
+              });
+            } catch (defErr) {
+              // Ignore if already configured
+            }
+          }
+        } catch (e) {
+          // Silent fallback
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

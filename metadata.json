@@ -1,0 +1,6 @@
+{
+  "name": "ECLPISE DUMP License API",
+  "description": "Enterprise-grade License Key Authentication API & Management Dashboard for the ECLPISE DUMP Android application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
